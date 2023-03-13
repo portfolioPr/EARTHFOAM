@@ -1,0 +1,42 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: $black;
+    transition: background-color 0.3s;
+    user-select: none;
+    @include ellips;
+    white-space: nowrap;
+    border-radius: 90px;
+    font-size: 14px;
+    &.more{
+        display: block;
+        padding: 10px;
+        line-height: 0.5;
+        width: 38px;
+        height: 38px;
+    }
+    &.sm{
+        display: block;
+        padding: 12px 24px;
+        &:hover{
+            background-color: #EA805C;
+        }
+    }
+    &.link{
+        display: unset;
+        padding: 20px 105px 18px 105px;
+        line-height: 100%;
+        &.w{
+            display: block;
+            background-color: #fff;
+            color: $black;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        &:hover{
+            background-color: #EA805C;
+            color: $cotton;
+        }
+    }
+}

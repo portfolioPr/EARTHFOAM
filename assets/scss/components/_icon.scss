@@ -1,0 +1,30 @@
+
+.ico-cart{
+    display: block;
+    background: url(/assets/svg/cart.svg) center / 12px auto  no-repeat;
+    width: 32px;
+    height: 32px;
+    @include mobile{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.ico-more{
+    display: block;
+    width: 19px;
+    height: 3px;
+    background: url(/assets/svg/more.svg) center / 19px auto  no-repeat;
+}
+
+.link-sns{
+    display: block;
+    width: 20px;
+    height: 19px;
+    &.instagram{
+        background: url(/assets/svg/instagram.svg) no-repeat;
+    }
+    &.twitter{
+        background: url(/assets/svg/twitter.svg) no-repeat;
+    }
+}

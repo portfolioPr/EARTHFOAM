@@ -1,0 +1,288 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.common-inner{
+    padding: 0 68px;
+    @include desktop2{
+      padding: 0 40px;
+    }
+    @include mobile{
+      padding: 0 20px;
+    }
+}
+
+.notScroll{
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-wrapper{
+  // overflow-x: hidden;
+  transition: 
+  transform 750ms cubic-bezier(0.22, 1, 0.36, 1),
+   filter 750ms linear;
+  &.on{
+    transform: translateX(532px);
+    filter: contrast(75%) grayscale(50%);
+    @include mobile{
+      transform: none;
+    }
+  }
+}
+
+
+//animation
+// logo
+#mask_e, #mask_main, #mask_cross {
+  animation-iteration-count: 1;
+  animation-fill-mode: both; }
+
+@keyframes mask-e {
+  from {
+    stroke-dashoffset: 685; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes mask-main {
+  from {
+    stroke-dashoffset: 4470; }
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes mask-cross {
+  from {
+    stroke-dashoffset: 235; }
+  to {
+    stroke-dashoffset: 0; } }
+
+.homeHero__logo .logoMask {
+  animation-play-state: paused; }
+
+.homeHero__logo--play .logoMask {
+  animation-play-state: running; }
+
+#mask_e {
+  animation-name: mask-e;
+  animation-duration: 80ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 50ms;
+  stroke-dasharray: 685; }
+
+#mask_main {
+  animation-name: mask-main;
+  animation-duration: 1400ms;
+  animation-timing-function: ease-out;
+  animation-delay: 130ms;
+  stroke-dasharray: 4470; }
+
+#mask_cross {
+  animation-name: mask-cross;
+  animation-duration: 80ms;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1730ms;
+  stroke-dasharray: 235; }
+
+// flow
+@keyframes flow-ani {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-25%); } 
+}
+
+.flow-ani {
+animation-name: flow-ani;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+
+// wave
+@keyframes wave-ani {
+  0% {
+    transform: translateY(0); }
+  12.5% {
+    transform: translateY(-4px); }
+  37.5% {
+    transform: translateY(4px); }
+  50% {
+    transform: translateY(0); } }
+
+.wave-ani > *:nth-child(0) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1000ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(1) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1075ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(2) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1150ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(3) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1225ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(4) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1300ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(5) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1375ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(6) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1450ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(7) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1525ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(8) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1600ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(9) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1675ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+.wave-ani > *:nth-child(10) {
+  display: inline-block;
+  animation-name: wave-ani;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 1750ms;
+  padding: 5px;
+  margin: -5px; 
+}
+
+// fade
+@keyframes fade-ani-overlay {
+  0% {
+    transform: translateX(0px); }
+  10% {
+    transform: translateX(calc(100% - 25px)); }
+  40.001% {
+    transform: translateX(calc(100% - 25px)); }
+  40.002% {
+    transform: translateX(calc(-100% + 25px)); }
+  50% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(0px); } 
+}
+
+@keyframes fade-ani {
+  0% {
+    z-index: 0; }
+  5% {
+    z-index: 1; }
+  40.001% {
+    z-index: 1; }
+  40.002% {
+    z-index: 1; }
+  50.001% {
+    z-index: 1; }
+  50.002% {
+    z-index: 0; }
+  100% {
+    z-index: 0; } 
+}
+
+.fade-ani {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: fade-ani;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  user-select: none;
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: calc(100% + 50px);
+    height: 100%;
+    background: linear-gradient(90deg, rgba(20, 22, 23, 0) 0%, #141617 10%, #141617 90%, rgba(20, 22, 23, 0) 100%);
+    animation-name: fade-ani-overlay;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; 
+  }
+}
+.fade-ani--delay {
+  animation-delay: calc(5s); 
+}
+.fade-ani--delay:after {
+  animation-delay: calc(5s); 
+}
