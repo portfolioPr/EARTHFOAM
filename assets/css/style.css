@@ -400,27 +400,27 @@ body {
 
 @font-face {
   font-family: "GT America";
-  src: url(/assets/fonts/GT-America-Standard-Light.woff2) format("woff2");
+  src: url(../fonts/GT-America-Standard-Light.woff2) format("woff2");
   font-weight: 300;
 }
 @font-face {
   font-family: "GT America";
-  src: url(/assets/fonts/GT-America-Standard-Regular.woff2) format("woff2");
+  src: url(../fonts/GT-America-Standard-Regular.woff2) format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: "GT America";
-  src: url(/assets/fonts/GT-America-Standard-Medium.woff2) format("woff2");
+  src: url(../fonts/GT-America-Standard-Medium.woff2) format("woff2");
   font-weight: 500;
 }
 @font-face {
   font-family: "SangBleu Sunrise";
-  src: url(/assets/fonts/SangBleuSunrise-Regular-WebS.woff2) format("woff2");
+  src: url(../fonts/SangBleuSunrise-Regular-WebS.woff2) format("woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: "SangBleu Sunrise Italic";
-  src: url(/assets/fonts/SangBleuSunrise-RegularItalic-WebS.woff2) format("woff2");
+  src: url(../fonts/SangBleuSunrise-RegularItalic-WebS.woff2) format("woff2");
   font-weight: 400;
 }
 .header {
@@ -819,7 +819,7 @@ body {
 
 .ico-cart {
   display: block;
-  background: url(/assets/svg/cart.svg) center/12px auto no-repeat;
+  background: url(../svg/cart.svg) center/12px auto no-repeat;
   width: 32px;
   height: 32px;
 }
@@ -834,7 +834,7 @@ body {
   display: block;
   width: 19px;
   height: 3px;
-  background: url(/assets/svg/more.svg) center/19px auto no-repeat;
+  background: url(../svg/more.svg) center/19px auto no-repeat;
 }
 
 .link-sns {
@@ -843,10 +843,10 @@ body {
   height: 19px;
 }
 .link-sns.instagram {
-  background: url(/assets/svg/instagram.svg) no-repeat;
+  background: url(../svg/instagram.svg) no-repeat;
 }
 .link-sns.twitter {
-  background: url(/assets/svg/twitter.svg) no-repeat;
+  background: url(../svg/twitter.svg) no-repeat;
 }
 
 .container {
@@ -1648,7 +1648,7 @@ body {
   display: block;
   width: 100%;
   padding-bottom: 70%;
-  background: url(/assets/images/bg_shop.webp) center/cover no-repeat;
+  background: url(../images/bg_shop.webp) center/cover no-repeat;
 }
 
 .sc-about {
@@ -1760,6 +1760,7 @@ body {
 .sc-about .about-item .btn.link.w span {
   width: 100%;
   display: block;
+  line-height: 120%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

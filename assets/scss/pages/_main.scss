@@ -693,7 +693,7 @@
         display: block;
         width: 100%;
         padding-bottom: 70%;
-        background: url(/assets/images/bg_shop.webp) center/cover no-repeat;
+        background: url(../images/bg_shop.webp) center/cover no-repeat;
     }
 }
 
@@ -789,6 +789,7 @@
             span{
                 width: 100%;
                 display: block;
+                line-height: 120%;
                 @include ellips;
                 @include mobile{
                     max-width: 250px;

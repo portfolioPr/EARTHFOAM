@@ -1,7 +1,7 @@
 
 .ico-cart{
     display: block;
-    background: url(/assets/svg/cart.svg) center / 12px auto  no-repeat;
+    background: url(../svg/cart.svg) center / 12px auto  no-repeat;
     width: 32px;
     height: 32px;
     @include mobile{
@@ -14,7 +14,7 @@
     display: block;
     width: 19px;
     height: 3px;
-    background: url(/assets/svg/more.svg) center / 19px auto  no-repeat;
+    background: url(../svg/more.svg) center / 19px auto  no-repeat;
 }
 
 .link-sns{
@@ -22,9 +22,9 @@
     width: 20px;
     height: 19px;
     &.instagram{
-        background: url(/assets/svg/instagram.svg) no-repeat;
+        background: url(../svg/instagram.svg) no-repeat;
     }
     &.twitter{
-        background: url(/assets/svg/twitter.svg) no-repeat;
+        background: url(../svg/twitter.svg) no-repeat;
     }
 }
