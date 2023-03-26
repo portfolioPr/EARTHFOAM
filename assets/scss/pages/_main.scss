@@ -259,7 +259,7 @@
                 grid-column: 16/span 8;
             }
             @include mobile{
-                max-width: 60%;
+                width: 100%;
             }
             .img-box{
                 aspect-ratio: 0.8;
@@ -275,7 +275,7 @@
                 grid-column: 2/span 12;
             }
             @include mobile{
-                max-width: 80%;
+                width: 100%;
             }
             .img-box{
                 aspect-ratio: 1;
@@ -629,7 +629,7 @@
                     right: 0;
                     width: 10px;
                     height: 10px;
-                    background: url(/assets/svg/arrow.svg) center / 10px auto no-repeat;
+                    background: url(../svg/arrow.svg) center / 10px auto no-repeat;
                     transform: scaleY(1); transition: .3s;
                 }
                 &.on{

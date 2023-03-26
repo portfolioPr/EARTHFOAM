@@ -1157,7 +1157,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-products .group-products .product:nth-child(2) {
-    max-width: 60%;
+    width: 100%;
   }
 }
 .sc-products .group-products .product:nth-child(2) .img-box {
@@ -1178,7 +1178,7 @@ body {
 }
 @media (max-width: 767px) {
   .sc-products .group-products .product:nth-child(3) {
-    max-width: 80%;
+    width: 100%;
   }
 }
 .sc-products .group-products .product:nth-child(3) .img-box {
@@ -1579,7 +1579,7 @@ body {
   right: 0;
   width: 10px;
   height: 10px;
-  background: url(/assets/svg/arrow.svg) center/10px auto no-repeat;
+  background: url(../svg/arrow.svg) center/10px auto no-repeat;
   transform: scaleY(1);
   transition: 0.3s;
 }

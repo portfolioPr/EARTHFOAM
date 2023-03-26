@@ -154,12 +154,35 @@ $(function(){
             })
 
 
+                    
+            /**
+             * sc-products cursor
+             */
+
+            //커서좌표구하기
+
+            $(window).mousemove(function(e){
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+                gsap.to('.cursor',{
+                    x:mouseX,
+                    y:mouseY
+                })
+            })
+
+            //이미지 호버시 커서 변경
+            $('.sc-products .link-cursor').hover(function(){
+                $(this).addClass('on')
+                $('.cursor').addClass('on')
+            },function(){
+                $('.sc-products .link-cursor').removeClass('on')
+                $('.cursor').removeClass('on')
+            })
+
+
 
       }
-      
-      window.onresize = function(){
-        document.location.reload();
-      };
+
 
 
 
@@ -172,29 +195,6 @@ $(function(){
         $(target).addClass('on').siblings('.sc-recomm .con-item').removeClass('on')
     })
 
-    /**
-     * sc-products cursor
-     */
-
-    //커서좌표구하기
-
-    $(window).mousemove(function(e){
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-        gsap.to('.cursor',{
-            x:mouseX,
-            y:mouseY
-        })
-    })
-
-    //이미지 호버시 커서 변경
-    $('.sc-products .link-cursor').hover(function(){
-        $(this).addClass('on')
-        $('.cursor').addClass('on')
-    },function(){
-        $('.sc-products .link-cursor').removeClass('on')
-        $('.cursor').removeClass('on')
-    })
 
    
 
