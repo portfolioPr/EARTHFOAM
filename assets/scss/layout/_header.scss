@@ -179,6 +179,9 @@
         .copy{
             font-size: 12px;
             line-height: 150%;
+            @include mobile{
+                margin-bottom: 60px;
+            }
         }
     }
     .group-tag{
