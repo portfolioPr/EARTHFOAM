@@ -58,13 +58,12 @@ $(function(){
          */
         var recommswiper = new Swiper(".recomm-slide", {
             loop:true,
-            touchRatio: 0,
             effect: 'fade',
             fadeEffect: {
             crossFade: true
             },
             autoplay: {
-                delay: 1300,
+                delay: 2300,
                 disableOnInteraction: false,
             },
             pagination: {
