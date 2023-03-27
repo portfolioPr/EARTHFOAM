@@ -429,6 +429,7 @@ body {
 }
 .header .group-menu {
   position: fixed;
+  top: 0;
   display: flex;
   width: 612px;
   left: -532px;
