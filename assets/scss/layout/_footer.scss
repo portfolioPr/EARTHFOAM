@@ -35,7 +35,7 @@
     .group-footer{
         display: flex;
         justify-content: space-between;
-        @include desktop2{
+        @include desktop1{
             flex-direction: column;
             row-gap: 80px;
         }
@@ -81,7 +81,7 @@
             flex-wrap: wrap;
             column-gap: 40px;
             row-gap:20px;
-            @include desktop2{
+            @include desktop1{
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
             }
