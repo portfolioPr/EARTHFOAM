@@ -9,6 +9,7 @@
         height: 100%; 
         color: $cotton;
         z-index: 1010;
+        background: $black; 
         transition: 
         transform 750ms cubic-bezier(0.22, 1, 0.36, 1),
         filter 750ms linear,

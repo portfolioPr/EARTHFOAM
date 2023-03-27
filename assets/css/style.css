@@ -434,6 +434,7 @@ body {
   height: 100%;
   color: #F8F7ED;
   z-index: 1010;
+  background: #141617;
   transition: transform 750ms cubic-bezier(0.22, 1, 0.36, 1), filter 750ms linear, left 750ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 @media (max-width: 767px) {
