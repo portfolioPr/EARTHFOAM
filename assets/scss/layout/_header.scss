@@ -4,6 +4,7 @@
     .group-menu{
         position: fixed;
         top: 0;
+        bottom: unset;
         width: 612px;
         left: -532px;
         height: 100vh; 
@@ -121,7 +122,8 @@
     }
     .menu-content{
         position: fixed;
-        top: 0; 
+        top: 0;
+        bottom: 0;
         height: 100vh;
         background: $black;  
         z-index: 1030;

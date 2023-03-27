@@ -106,7 +106,6 @@ body {
 
 .notScroll {
   overflow: hidden;
-  touch-action: none;
   width: 100%;
   height: 100vh;
 }
@@ -430,6 +429,7 @@ body {
 .header .group-menu {
   position: fixed;
   top: 0;
+  bottom: unset;
   width: 612px;
   left: -532px;
   height: 100vh;
@@ -544,6 +544,7 @@ body {
 .header .menu-content {
   position: fixed;
   top: 0;
+  bottom: 0;
   height: 100vh;
   background: #141617;
   z-index: 1030;
