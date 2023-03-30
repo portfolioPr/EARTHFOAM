@@ -134,6 +134,13 @@
         @include mobile{
             bottom: 0;
             transform: translateY(-100%);
+            width: 100%;
+            .mobile{
+                display: block;
+            }
+        }
+        .mobile{
+            display: none;
         }
     }
     .common-inner{
@@ -148,6 +155,9 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @include desktop2{
+                font-size: 42px;
+            }
             @include mobile{
                 flex: 1;
                 margin-top: 60px;

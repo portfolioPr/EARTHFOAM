@@ -36,7 +36,7 @@ $(function(){
         $('body').removeClass('notScroll')
     })
 
-    if(matchMedia("screen and (max-width: 767px)").matches){
+    if(matchMedia("screen and (max-width: 960px)").matches){
 
         /**
          * intro
