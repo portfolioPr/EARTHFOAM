@@ -14,7 +14,9 @@
         transform 750ms cubic-bezier(0.22, 1, 0.36, 1),
         filter 750ms linear,
         left 750ms cubic-bezier(0.22, 1, 0.36, 1);
-        touch-action: none;
+        @include tablet{
+            height: 100%;
+        }
         @include mobile{
             flex-direction: column;
             width: 100%;
@@ -44,6 +46,11 @@
                         }
                     }
                 }
+                &.mobile{
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                }
             }
         }
     }
@@ -63,7 +70,6 @@
         align-items: center;
         justify-content: space-between;
         transition: transform 750ms cubic-bezier(0.22, 1, 0.36, 1), filter 750ms linear;
-        touch-action: none;
         @include tablet{
             height: 100%;
         }
@@ -135,20 +141,20 @@
         padding: 68px 0;
         transition: transform 750ms cubic-bezier(0.22, 1, 0.36, 1), filter 750ms linear;
         overflow-y: auto;
-        touch-action: none;
         @include tablet{
             height: 100%;
         }
         @include mobile{
             bottom: 0;
+            height: 100vh;
             transform: translateY(-100%);
             width: 100%;
-            .mobile{
-                display: block;
-            }
         }
         .mobile{
             display: none;
+            @include mobile{
+                display: block;
+            }
         }
     }
     .common-inner{
