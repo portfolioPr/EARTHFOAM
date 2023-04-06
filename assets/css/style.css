@@ -433,7 +433,7 @@ body {
   bottom: unset;
   width: 612px;
   left: -532px;
-  height: 100vh;
+  height: 100%;
   color: #F8F7ED;
   display: flex;
   z-index: 1010;
