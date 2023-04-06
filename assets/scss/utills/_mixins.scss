@@ -72,6 +72,12 @@ $desktop2: 1200px;
   }
 }
 
+@mixin tablet2{
+  @media (min-width: $tablet2){
+    @content;
+  }
+}
+
 /*반응형, 브라우저 크기가 1024px 이상일때*/
 @mixin desktop1{
   @media (max-width: $desktop1){
