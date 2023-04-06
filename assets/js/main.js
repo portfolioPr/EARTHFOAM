@@ -23,15 +23,15 @@ $(function(){
     /**
      * menu
      */
-    $('.btn-menu').click(function(e){ //이벤트
+    $('.header .btn-menu').click(function(e){ //이벤트
         e.preventDefault();
-        $('.group-menu').toggleClass('on')
+        $('.header .group-menu').toggleClass('on')
         $('.content-wrapper').toggleClass('on')
         $('body').toggleClass('notScroll')
     })
     $('.content-wrapper').click(function(e){ //이벤트
         e.preventDefault();
-        $('.group-menu').removeClass('on')
+        $('.header .group-menu').removeClass('on')
         $(this).removeClass('on')
         $('body').removeClass('notScroll')
     })
